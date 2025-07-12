@@ -14,6 +14,7 @@
     box-sizing: border-box;
     display:flex;
     flex-direction: row;
+    align-items: center;
 }
 .logobox{
     height:100px;
@@ -23,13 +24,19 @@
     justify-content: center;
 }
 .searchsuper{
-    height:100px;
+    height:60px;
     width: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    border:1px solid black;
     box-sizing: border-box;
-    padding:0px 10px;    
+    padding:0px 35px;   
+    border-radius: 40px; 
+}
+.searchsuper button{
+    background-color: white;
+    border:none;
+    cursor:pointer;
 }
 .loginandsignupbox{
     height:100px;
@@ -53,10 +60,13 @@
 }
 .searchbox{
     height:50px;
-    width: 700px;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding:0px 40px;
+    width: 100%;
+    border:none;
+    outline:none;
+    background: transparent;
+}
+.fa-solid.fa-magnifying-glass{
+    font-size:20px;
 }
 .loginbutton{
     width:100px;

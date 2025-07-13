@@ -1,11 +1,18 @@
-const input = document.getElementById("searchinput");
-input.addEventListener("keyup",(event)=>{
-    const query = input.value.toLowerCase();
-    const cards = document.querySelectorAll(".pgcards");
+let currentslide=0;
+let slides = document.querySelectorAll(".bannerimg");
+let slideslen=slides.length;
 
-    cards.forEach(card=>{
-        const pgName = card.querySelector(".pgname").textContent.toLowerCase();
-      card.style.display = pgName.includes(query) ? "flex" : "none";
-    })
+function showslide(index){
+  slides.forEach((slide,i)=>{
+    slide.classList.remove("active");
+  })
+  slides[index].classList.add('active');
+}
+function nextslide(){
+  currentslide = (currentslide + 1) % slideslen;
+  showslide(currentslide)
+}
 
-})
+setInterval(nextslide, 3000);
+
+showslide(currentslide);

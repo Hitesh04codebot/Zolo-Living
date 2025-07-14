@@ -62,6 +62,49 @@ form.addEventListener('submit',(event)=>{
 
 
 
+  const signupContainer = document.getElementById("signup-container");
+  const signinContainer = document.getElementById("signin-container");
+
+  const signupBtns = document.querySelectorAll(".signup-btn");
+  const signinBtns = document.querySelectorAll(".signin-btn");
+
+  // Handle Sign Up button click
+  signupBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Show signup container and hide signin
+      signupContainer.classList.add("active");
+      signinContainer.classList.remove("active");
+
+      // Set active button style
+      signupBtns.forEach((b)=> {
+        b.classList.add("active")
+    });
+      signinBtns.forEach((b) =>{
+        b.classList.remove("active")
+    });
+    });
+  });
+
+  // Handle Sign In button click
+  signinBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Show signin container and hide signup
+      signinContainer.classList.add("active");
+      signupContainer.classList.remove("active");
+
+      // Set active button style
+      signinBtns.forEach((b) => {
+        b.classList.add("active")
+    });
+      signupBtns.forEach((b) => {
+        b.classList.remove("active")
+    });
+    });
+  });
+
+
+
+
 
 
 

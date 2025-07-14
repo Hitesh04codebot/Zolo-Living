@@ -12,8 +12,14 @@
             <p style="text-align: center; font-size: 80px; font-weight: bolder;">MUJ<span style="color: rgb(10, 71, 102) ;">STAYS</span></p>
             <span style="font-size: 20px;">for manipal students</span>
         </div>
-        <div class="container2">
-            <h1 style="text-align: center;">Create your account</h1><br><br>
+        
+        
+        <!--SIGN UP CONTAINER-->
+        <div class="signup-container active" id="signup-container" >
+            <div class="btn-container">
+                <button class="signup-btn active">Sign Up</button>
+                <button class="signin-btn">Sign In</button>
+            </div>
             <form class="form" id="form" action="homepage.html" method="get">
                 <div class="form-control" >
                     <label>Username<br></label>
@@ -40,7 +46,35 @@
                 <br>
                 
             </form>
-            <p style="font-size:14px; text-align: right;">already have an account?&nbsp;<a href="">signin</a></p>
+            <!-- <p style="font-size:14px; text-align: right;">already have an account?&nbsp;<a href="#" id="goToSignin">signin</a></p> -->
+        </div>
+        
+        <!--SIGN IN CONTAINER-->
+        <div class="signin-container" id="signin-container">
+            <div class="btn-container">
+                <button class="signup-btn">Sign Up</button>
+                <button class="signin-btn">Sign In</button>
+            </div>
+            <form class="form" id="form" action="homepage.html" method="get">
+                <div class="form-control">
+                    <label>Email id<br></label>
+                    <input type="text" placeholder="Enter your registered email id" class="input" id="email"><br>
+                    <small>*Error message</small>
+                    
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label>Password<br></label>
+                    <input type="password"  placeholder="Enter your password" class="input" id="password">
+                    <small>*Error message</small>
+                    
+                </div>
+                <br>  
+                    <button type="submit" class="signup">Sign in</button>
+                <br>
+                
+            </form>
+            <!-- <p style="font-size:14px; text-align: right;">don't have an account?&nbsp;<a href="#" id="goToSignup">signup</a></p> -->
         </div>
     </div>
     <script src="formvalidation.js"></script>

@@ -122,11 +122,55 @@
 .bannerimg.active{
     display: block;
 }
-.filterbox{
-    height:100px;
-    background-color:rgb(10, 71, 102) ;
-    margin:20px 90px;
+.filter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    padding:auto;
 }
+.filter .btn,.resetbtn{
+    width:10%;
+    height:50px;
+    border-radius: 30px;
+    border:1px solid grey;
+    background-color: white;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.filter .btn:hover{
+    border:1.5px solid rgb(10, 71, 102);
+    color:rgb(10, 71, 102);
+}
+.resetbtn:hover{
+    border: 2px solid red;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pglists{
     margin:30px 90px;
 }

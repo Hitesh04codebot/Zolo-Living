@@ -16,3 +16,15 @@ function nextslide(){
 setInterval(nextslide, 3000);
 
 showslide(currentslide);
+
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const icon = btn.querySelector("i");
+    icon.classList.toggle("fa-angle-down");
+    icon.classList.toggle("fa-angle-up");
+  });
+});
+
+

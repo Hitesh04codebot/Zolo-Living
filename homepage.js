@@ -3,7 +3,7 @@ let slides = document.querySelectorAll(".bannerimg");
 let slideslen=slides.length;
 
 function showslide(index){
-  slides.forEach((slide,i)=>{
+  slides.forEach((slide)=>{
     slide.classList.remove("active");
   })
   slides[index].classList.add('active');
@@ -16,6 +16,8 @@ function nextslide(){
 setInterval(nextslide, 3000);
 
 showslide(currentslide);
+
+
 
 const buttons = document.querySelectorAll(".btn");
 

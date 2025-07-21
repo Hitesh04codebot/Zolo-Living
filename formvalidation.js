@@ -102,6 +102,23 @@ form.addEventListener('submit',(event)=>{
     });
   });
 
+  const pwdToggle = document.getElementById('pwdtoggle');
+  const passwordInput = document.getElementById('password');
+
+  // Toggle password visibility
+
+  pwdToggle.addEventListener('click', () => {
+    if(passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      pwdToggle.innerHTML = '<i class="fa-solid fa-eye"></i>';
+    }
+    else{
+      passwordInput.type = 'password';
+      pwdToggle.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    }
+
+  });
+
 
 
 

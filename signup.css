@@ -140,3 +140,9 @@ form button:hover{
 .form-control.error small{
     visibility: visible;
 }
+.form-control span{
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    cursor: pointer;
+}

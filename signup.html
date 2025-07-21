@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="signup.css">
+    
 </head>
 <body>
     <div class="parent-container">
@@ -36,9 +37,8 @@
                 <br><br>
                 <div class="form-control">
                     <label>Password<br></label>
-                    <input type="password"  placeholder="Enter your password" class="input" id="password">
+                    <input type="password"  placeholder="Enter your password" class="input" id="password"><span id="pwdtoggle"><i class="fa-solid fa-eye-slash"></i></span>
                     <small>*Error message</small>
-                    
                 </div>
                 <br>
                     <input type="checkbox" /required>&nbsp;<span style="font-size: 13px; font-weight: 400;">By signing up,I agree with Terms and Condition</span><br><br>  
@@ -65,7 +65,9 @@
                 <br><br>
                 <div class="form-control">
                     <label>Password<br></label>
-                    <input type="password"  placeholder="Enter your password" class="input" id="password">
+                    
+                    <input type="password"  placeholder="Enter your password" class="input" id="password"><span id="pwdtoggle">
+                    <i class="fa-solid fa-eye-slash"></i></span>
                     <small>*Error message</small>
                     
                 </div>
@@ -78,5 +80,7 @@
         </div>
     </div>
     <script src="formvalidation.js"></script>
+    <script src="https://kit.fontawesome.com/7f94016a74.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logobox">
+            <span id="logoname1">MUJ</span><span id="logoname2">STAYS</span>
+        </div>
+        <div class="searchsuper">
+            <input type="text" class="searchbox" id="searchinput" placeholder= "find your perfect place to stay....">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="loginandsignupbox">
+            <input type="button" value="Login" class="loginbutton">
+            <input type="button" value="Create an account" class="signupbutton">
+        </div>
+    </nav>
+    <div class="banner1">
+        <div class="slide" id="slide">
+            <img src="./images/banner3.png" class="bannerimg " alt="Banner Image">
+            <img src="./images/banner1.png" class="bannerimg " alt="Banner Image">
+            <img src="./images/banner2.png" class="bannerimg active" alt="Banner Image">
+        </div>
+    </div>
+
+    <div class="filter">
+            <!-- <h1>Filters<i class="fa-solid fa-filter"></i></h1> -->
+            <button class="btn">Occupancy&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+            <button class="btn">Budget&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+            <button class="btn">Gender&nbsp;&nbsp;<span class="filterbtn"><i class="fa-solid fa-angle-down"></i></button>
+            <button class="btn">Amenities&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+            <button class="resetbtn">Reset Filter&nbsp;&nbsp;<span><i class="fa-solid fa-xmark"></i></span></button>
+    </div>
+    
+
+    
+    <div class="pglists">
+    <h1>PGs near Manipal Hostel.</h1><br>
+    <!--1ST PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/scholars-hostel.jpg" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Scholars Hostel</h2>
+                    <button class="gender">Male</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-sun">&nbsp;</i>Private Balcony</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Triple</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>10,999<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2ND PG-->
+        <br>
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/sundarone-pg.jpg" alt="pg photo">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Sunderone</h2>
+                    <button class="gender" style="background-color:rgb(247, 209, 173)">Unisex</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-sun">&nbsp;</i>Private Balcony</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>12,599<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--3RD PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/joystel-pg.jpg" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Joystel PG</h2>
+                    <button class="gender">Male</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-person-swimming"></i>&nbsp;</i>Swimming Pool</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Triple</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>6,500<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--4TH PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/kumawat-hostel.avif" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Kumawat Hostel</h2>
+                    <button class="gender">Male</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-dumbbell"></i>&nbsp;</i>Gym</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Triple</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>13,499<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--5TH PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/sarathi hostel.webp" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Sarathi Hostel</h2>
+                    <button class="gender" style="background-color: pink;">Female</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-table-tennis-paddle-ball"></i>&nbsp;</i>Indoor Games</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Triple</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>15,999<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--6TH PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/tejasvi-hostel.jpg" alt="pg photo" >
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Tejasvi Hostel</h2>
+                    <button class="gender">Male</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-dumbbell"></i>&nbsp;</i>Gym</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Triple</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>11,999<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--7TH PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/nirvana.png" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Nirvana</h2>
+                    <button class="gender" style="background-color:rgb(247, 209, 173)">Unisex</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-dumbbell"></i>&nbsp;</i>Gym</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-table-tennis-paddle-ball"></i>&nbsp;</i>Indoor Games</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-video"></i>&nbsp;</i>Theater</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>17,499<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--8TH PG-->
+        <div class="pgcards">
+            <div class="partition1">
+                <img src = "./images/royal girl pg.png" alt="pg photo" style="border-top-left-radius:20px; border-bottom-left-radius:20px;">
+            </div>
+            <div class="partition2">
+                <div class="header">
+                    <h2 class="pgname">Royal Girls Pg</h2>
+                    <button class="gender" style="background-color: pink;">Female</button>
+                </div>
+                <div class="body">
+                    <div class="directions"><a href="" style="font-size: 12px; text-decoration: none; color:rgb(10, 71, 102);">View Direction</a>&nbsp;<i class="fa-solid fa-diamond-turn-right" style="font-size: 12px;"></i></div>
+                    <div class="amenities">
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bed">&nbsp;</i>Double Occupancy</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-bath">&nbsp;</i>Attached Bathroom</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-car"></i>&nbsp;</i>Pick n Drop</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-shirt"></i></i>&nbsp;</i>Laundry</button>
+                        <button class="amenitiesbtn"><i class="fa-solid fa-snowflake"></i>&nbsp;</i>AC</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="pricebox">
+                        <span id="pricehead1">Starts from</span><br>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>9,999<span id="pricehead2">/mon*</span></h3>
+                    </div>
+                    <div class="bookingbtns">
+                        <input type="button" Value="SCHEDULE A VISIT" class="bookingbtn1">&nbsp;
+                        <input type="button" Value="REQUEST A CALLBACK" class="bookingbtn2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="foot-one">
+    <div class="logo-container">
+        <h1>MUJSTAYS</h1>
+    </div>
+    <div class="info-container">
+        <p>about us</p>
+        <p>contact</p>
+        <p>T&C</p>
+        <p>FAQs</p>
+    </div>
+    <div class="social-container">
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i><li>
+            <li><i class="fa-brands fa-linkedin"></i><li>
+            <li><i class="fa-brands fa-instagram"></i><li>
+            <li><i class="fa-brands fa-twitter"></i><li>
+        </ul>
+    </div>
+</footer>
+<footer class="foot-two">
+    <p>Copyright © 2025 | All Rights Reserved by Zolo Living</p>
+    <p>Images shown are for representational purposes only. Amenities depicted may<br> or may not form a part of that individual property.</p>
+</footer>
+
+
+<script src="homepage.js"></script>
+<script src="https://kit.fontawesome.com/7f94016a74.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -181,10 +181,14 @@
 /* responsive design for banner */ 
 @media screen and (max-width: 1200px) {
     .banner1 {
-        margin: 1rem 2rem;
+        width:100vw;
+        margin:0px;
+        border-radius: 0px; 
     }
     .bannerimg {
         height: 25rem;
+        width:100vw;
+        border-radius: 0px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -199,7 +203,18 @@
         border-radius: 0px;
     }
 }
-
+@media screen and (max-width:560px){
+    .banner1 {
+        width:100vw;
+        margin:0px;
+        border-radius: 0px;
+    }
+    .bannerimg {
+        height: 16rem;
+        width:100vw;
+        border-radius: 0px;
+    }
+}
 
 
 

@@ -5,8 +5,9 @@
     font-family:"Montserrat", sans-serif;
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
-
+/* NAVBAR CSS */
 .navbar{
     margin:1rem 5rem ;
     height:100px;
@@ -120,7 +121,7 @@
 @media screen and (max-width: 1200px) {
     .navbar{
         margin:1rem 2rem ;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .searchsuper{
         width: 30rem;
@@ -141,7 +142,7 @@
     }
 }
 
-
+/* BANNER CSS */
 .banner1 {
     margin: 1rem 5.6rem;
     display: flex;
@@ -216,23 +217,16 @@
     }
 }
 
+/* FILTER BUTTONS CSS */
 
-
-
-
-
-
-.filter{
+.filter-buttons{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 70px;
-    width: 90%;
-    margin: auto;
-    padding:auto;
+    margin:20px;
 }
-.filter{
+.filter-buttons{
     opacity: 0;
     animation: filteranimation 1s ease-out forwards;
     animation-delay: 0.1s;
@@ -245,9 +239,10 @@
         opacity:1;
     }
 }
-.filter .btn,.resetbtn{
-    width:10%;
+.filter-buttons .btn,.resetbtn{
+    width:auto;
     height:50px;
+    padding:10px;
     border-radius: 30px;
     border:1px solid grey;
     background-color: white;
@@ -271,6 +266,40 @@
     border: 2px solid red;
     color:red;
 }
+.apply-filter-btn{
+    margin: 1rem 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.applybtn{
+    display:none;
+    width:auto;
+    height:50px;
+    padding:10px;
+    border-radius: 30px;
+    border:1px solid grey;
+    background-color: white;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.applybtn:hover{
+    border:1.5px solid rgb(10, 71, 102);
+    color:rgb(10, 71, 102);
+}
+/* responsive design for filter buttons */
+@media  screen and (max-width: 800px) {
+    .filter-buttons{
+        display:none;
+    }
+    .applybtn{
+        display:block;
+    }
+    .applybtn:hover{
+    border:1.5px solid rgb(10, 71, 102);
+    color:rgb(10, 71, 102);
+}
+}
 
 
 
@@ -278,12 +307,11 @@
 
 
 
-
-
+/* PG CARDS CSS */
 
 
 .pglists{
-    margin:30px 90px;
+    margin:1rem 5.6rem;
 }
 .pgcards{
     width: 65%;
@@ -387,7 +415,7 @@
 
 .amenities{
     width: 100%;
-    height:80%;
+    height:auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -416,14 +444,12 @@
     color:rgb(5, 21, 34);
 }
 .footer{
-    width:100%;
     height:25%;
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     padding:5px 10px;
-    box-sizing: border-box;
 }
 #pricehead1{
     font-size: 10px;
@@ -434,12 +460,19 @@
 .pricebox h3{
     font-family: "Raleway", sans-serif;
 }
+.bookingbtns{
+    width:60%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
 .bookingbtn1{
     border:none;
     background-color:rgb(10, 71, 102) ;
-    width: 140px;
     height:50px;
-    font-size:12px;
+    font-size:0.75rem;
     border-radius: 10px;
     padding: 5px;
     font-weight: bold;
@@ -451,14 +484,71 @@
     background-color:white ;
     color:rgb(10, 71, 102);
     border:1px solid rgb(10, 71, 102);
-    width: 150px;
     height:50px;
-    font-size:12px;
+    font-size:0.75rem;
     border-radius: 10px;
     padding: 5px;
     font-weight: bold;
     cursor: pointer;
 }
+/* responsive design for pg cards */
+@media screen and (max-width: 1476px) {
+    .pgcards{
+        width: 100%;
+        height:350px;
+    }
+    .pglists{
+        margin:1rem 2rem;
+    }
+    .bookingbtns{
+        width:60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .pricebox{
+        width:30%;
+    }
+    .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        align-items: center;
+        gap:0px;
+    }
+ }
+ @media  screen and (max-width: 950px) {
+    .pgcards{
+        width: 100%;
+        height:380px;
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bookingbtns{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        margin:10px 0px;
+        box-sizing: border-box;
+    }
+    .pricebox{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    #pricehead1{
+        font-size: 1rem;
+    }
+ }
+
+
 
 
 
